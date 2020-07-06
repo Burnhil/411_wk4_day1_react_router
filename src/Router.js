@@ -11,6 +11,8 @@ Remember to export the component at the end
 import React from 'react'
 import { Switch, Route } from 'react-router'
 // Write component imports here //
+
+//import home, about, car components from their js files to be used
 import Home from "./components/Home.js"
 import About from "./components/About.js"
 import Car from "./components/Car.js"
@@ -18,6 +20,8 @@ import Car from "./components/Car.js"
 
 
 // Start Router function here //
+
+//router function with switch inside to change between routes specified
 const Router = () => {
     return (
         <Switch>

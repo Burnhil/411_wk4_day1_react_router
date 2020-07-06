@@ -7,10 +7,15 @@ import { Container, Paper, Chip } from '@material-ui/core'
 const Car = (props) => {
     //use props.match.params to get the parameter being passed in url (/car/id)
     let id = props.match.params.id;
-    console.log(`props.match.params.id = ${id}`);
+    //testing to show id received through params
+    //console.log(`props.match.params.id = ${id}`);
+
+    //find the car using id from cars.json file
     let findCar = cars.find(c => c.id == id)
-    console.log(findCar);
+    //tseting to ensure we pull correct car
+    //console.log(findCar);
     return (
+        //create container to paper element with each individual chip element pulled from findCar variable
         <Container className="car-container">
             <div className="centerCarContainer">
             <Paper className="car-paper">
